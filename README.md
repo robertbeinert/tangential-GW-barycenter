@@ -20,7 +20,7 @@ The simulations have been performed with Python 3.8.8 and rely on
 * tqdm 4.62.3,
 * scikit-learn 1.0.1,
 * networkx 2.6.3,
-* [S-GWL](https://github.com/HongtengXu/s-gwl>).
+* [S-GWL](https://github.com/HongtengXu/s-gwl>) (Implementations from the paper).
 
 ## Experiments
 The numerical simulations can be reproduced using the script
@@ -38,8 +38,11 @@ The numerical simulations can be reproduced using the script
     for simultaneously matching multiple PPI networks (Tab. 3).
 
 Parts of the implementation relies on or is built on top of existing implementations from 
-[Python Optimal Transport](https://pythonot.github.io/) and
-Some of the input data is based on
+[Python Optimal Transport](https://pythonot.github.io/)
+and
+[S-GWL](https://github.com/HongtengXu/s-gwl>).
+
+The input data is based on
 [the 3D Mesh Deformation Dataset](http://people.csail.mit.edu/sumner/research/deftransfer/data.html) and
 [the FAUST Dataset](https://faust-leaderboard.is.tuebingen.mpg.de/).
 
