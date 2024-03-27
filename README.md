@@ -19,8 +19,8 @@ The simulations have been performed with Python 3.8.8 and rely on
 * pot 0.8.0,
 * tqdm 4.62.3,
 * scikit-learn 1.0.1,
-* networkx 2.6.3, and
-* [S-GWL](https://github.com/HongtengXu/s-gwl>).
+* networkx 2.6.3,
+* GromovWassersteinFramework.py from [S-GWL](https://github.com/HongtengXu/s-gwl>).
 
 ## Experiments
 The numerical simulations can be reproduced using the script

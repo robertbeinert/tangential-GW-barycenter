@@ -308,8 +308,12 @@ def tb(Y,Xs,numItermaxEmd = 500000,init_Ps=None,cr="NWCR",method="cg"):
             if init_Ps is None and method == "cg":
                 P = ot.gromov.gromov_wasserstein(Y.g,Xs[i].g,Y.xi,Xs[i].xi,numItermaxEmd=numItermaxEmd)
             elif method=="prox":
+                if init_Ps is None:
+                    init_P = None
+                else:
+                    init_P = init_Ps[i]
                 P = prox_gw(csr_matrix(Y.g),csr_matrix(Xs[i].g),
-                        Y.xi.reshape(-1,1),Xs[i].xi.reshape(-1,1),ot_hyperpara=ot_dict,trans0 = init_Ps[i])[0]
+                        Y.xi.reshape(-1,1),Xs[i].xi.reshape(-1,1),ot_hyperpara=ot_dict,trans0 = init_P)[0]
             else:
                 constC, hC1, hC2 = init_matrix(Y.g, Xs[i].g, Y.xi, Xs[i].xi, "square_loss")
                 P = cg(Y.xi, Xs[i].xi, 0, 1, f, df, init_Ps[i], armijo=False, C1=Y.g, C2=Xs[i].g,
@@ -413,7 +417,7 @@ def node_pair_assignment(trans, p_s, p_t):
     """
     Derives Node pairs based on the maximum rule without replacement.
     Slight modification of the function with the same name in the
-    GromovWassersteinGraphToolkit.py from https://github.com/HongtengXu/s-gwl
+    GromovWassersteinGraphToolkit.py from S-GWL <https://github.com/HongtengXu/s-gwl>
     """
     pairs_idx = []
     pairs_confidence = []
