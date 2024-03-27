@@ -18,8 +18,10 @@ The simulations have been performed with Python 3.8.8 and rely on
 * matplotlib 3.7.1,
 * pot 0.8.0,
 * tqdm 4.62.3,
+* trimesh 3.10.5,
 * scikit-learn 1.0.1,
 * networkx 2.6.3,
+* open3d 0.17.0,
 * GromovWassersteinFramework.py from [S-GWL](https://github.com/HongtengXu/s-gwl>).
 
 ## Experiments
