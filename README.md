@@ -31,13 +31,13 @@ The numerical simulations can be reproduced using the script
     for the 3d shape interpolations between 2 and 4 input shapes (Figs 1, 2),
 
 * `Ex2-LGW-DF.ipynb` 
-    for the classifying the 3d registrations from the mesh deformation dataset (Fig 3, Tab. 1),
+    for the classifying the 3d registrations from the mesh deformation dataset (Fig 3, Tab 1),
 
 * `Ex2-LGW-FAUST.ipynb` 
-    for the classifying the 3d meshes from the FAUST dataset (Fig 4, Tab. 2),
+    for the classifying the 3d meshes from the FAUST dataset (Fig 4, Tab 2),
 
 * `Ex3-PPI.ipynb` 
-    for simultaneously matching multiple PPI networks (Tab. 3).
+    for simultaneously matching multiple PPI networks (Tab 3).
 
 Parts of the implementation relies on or is built on top of existing implementations from 
 [Python Optimal Transport](https://pythonot.github.io/)
