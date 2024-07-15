@@ -1,6 +1,6 @@
 # Tangential Gromov-Wasserstein Barycenters
 
-![alt text]([http://url/to/img.png](https://github.com/robertbeinert/tangential-GW-barycenter/blob/main/lions_interpolation.png))
+![lions_interpolation](https://github.com/user-attachments/assets/f7fb028e-9761-4b50-a531-c800f0f0cb11)
 
 This repository contains the code for the paper 'Tangential Fixpoint Iterations for Gromov-Wasserstein Barycenters'. 
 A preprint version is available on [arXiv](https://arxiv.org/abs/2403.08612).
